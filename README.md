@@ -126,7 +126,7 @@ No available React architecture is fractal (because component can't be reused as
 I believe React components were called so mostly to strike Google's backed WebComponents.<br/>
 The chosen imperative OOP-style is not enough to emulate an app.
 
-In CycleJS components are **real** mini apps. Behold:
+In CycleJS components are **real** mini apps.
 
 **Intuitions:**
 
