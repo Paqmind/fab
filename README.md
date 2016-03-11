@@ -144,7 +144,7 @@ Example of non-DOM side effects:
 [**React-Side-Effect**](https://github.com/gaearon/react-side-effect) is a quintessence of this.
 You represent Browser side effects as a VDOM hierarchy... Sounds like a complete nonsense. You need to *really* stretch your mind (in a bad sense) to just imagine this.
 
-Even if you insiste React Components "has nothing to deal with DOM" (which can be proven as a lie) you still
+Even if you insist React Components "have nothing to deal with DOM" (which can be proven as a lie) you still
 need to address *hierarchy* word. Some things has multiple "parents". Some things are not hierarchical at all (graphics).
 I have no clue, but I guess ReactCanvas is another mind-stretcher.
 
