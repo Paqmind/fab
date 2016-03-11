@@ -23,7 +23,7 @@ The problem: no viable imperative implementation were found.
 ORM history. We can compare HTTP data load with ORM (SQL) data load.<br/> 
 With the first one being harder (distributed system).
 
-SQL ORM answers: what to load, how to load<br/>
+SQL ORM answers: what to load, how to load<brs/>
 HTTP "ORM" answers: what to load, how to load, from where to load
 
 If we agree ORM is kinda failed idea we really should be super dubious about GraphQL / Relay. 
@@ -111,7 +111,7 @@ Imagine browser used to mine bitcoins.<br/>
 Data comes from HTTP. Data goes to HTTP. <br/>
 **Nothing** is rendered at all. 
 
-Today we have tons of APIs which are not DOM-specific.
+Today we have tons of APIs which are not DOM-specific or are even not DOM-related<br/>
 Audio APIs. Canvas. WebGL. Service Workers... – just for example.
 
 Imagine an invisible player. To play an unstoppable background noise.
