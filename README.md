@@ -64,8 +64,8 @@ We have at least four possible strategies. All Benefits and Drawbpacks below are
 
 #### 1. Full preload. 
 
-All required data is loaded upfront. Frontend-only: filtering, pagination, etc.
-Like in old-school jQuery architecture.
+All required data is loaded upfront. Frontend-only: filtering, pagination, etc.<br/>
+The old-school jQuery architecture.
 
 Benefits: UI performance
 
@@ -75,8 +75,8 @@ Suitable for: small data, games
 
 #### 2. AJAXy
 
-Data is loaded for every render cycle. Backend-only: filtering, pagination, etc.
-Like in old-school backend-driven architecture.
+Data is loaded for every render cycle. Backend-only: filtering, pagination, etc.<br/>
+The old-school "backend-driven" architecture.
 
 Benefits: minimal memory usage (a waste of browser resources actually).
 
