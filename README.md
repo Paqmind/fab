@@ -135,7 +135,7 @@ Example of non-DOM side effects:
 3. Creating cookies
 4. Writing to local storage
 5. [Filesystem](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API)
-6. Playing audio
+6. [Audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 7. [WebWorkers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 8. ...
 
