@@ -117,7 +117,7 @@ Imagine an invisible player. To play an unstoppable background noise.
 In React you *can* represent such a player as a Component.
 But you *must* put it in the component tree.
 
-**Thus implying it's VDOM-related. Which it isn't.**
+**Thus implying it's DOM-related. Which it isn't.**
 
 So it seems a Frontend App can be better viewed as a *real* app and a Browser as an OS.
 
