@@ -109,7 +109,7 @@ Problem with DOM-centric approach: browser is not limited to DOM.
 
 Imagine a browser used to mine bitcoins.<br/>
 Data comes from HTTP. Data goes to HTTP. <br/>
-**Nothing** is rendered at all. 
+**Nothing** is rendered at all. So no components. Nor bloody widgets are in action.
 
 Today we have tons of APIs which are not DOM-specific or are even not DOM-related<br/>
 Audio APIs. Canvas. WebGL. Service Workers... – just for example.
