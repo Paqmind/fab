@@ -41,7 +41,7 @@ We may be not in control of all the criterias.
 In HTTP-1.1 we always strive to minimize requests.<br/> 
 Which may be counter-productive with HTTP-2.0.
 
-**The question:** network channel or browser memory is a real bottleneck? Or both?
+**The question:** network channel or browser memory will be a real bottleneck? Or both?
 
 ### Load strategies
 
