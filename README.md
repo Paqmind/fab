@@ -105,15 +105,27 @@ React team actually promotes two mutually exclusive ideas:
 1. Component is (mostly) for DOM representation (answers JSX, answers component as a `render` function)
 2. Component is not (only) for DOM representation (React Component vs Web Component, marketing duel with Google)
 
-Problem with DOM-centric approach: browser is not limited to DOM. Imagine browser used to mine bitcoins.
-Data comes from HTTP. Data goes to HTTP. **Nothing** is rendered at all.
+Problem with DOM-centric approach: browser is not limited to DOM. 
+
+Imagine browser used to mine bitcoins.<br/>
+Data comes from HTTP. Data goes to HTTP. <br/>
+**Nothing** is rendered at all. 
+
+Today we have tons of APIs which are not DOM-specific.
+Audio APIs. Canvas. WebGL. Service Workers... – just for example.
+
+Imagine an invisible player. To play an unstoppable background noise.
+In React you *can* represent such a player as a Component.
+But you *must* put it in the component tree.
+
+**Thus implying it's a VDOM-related. Which it is not.**
 
 So frontend app can be viewed as a real app and browser as an OS.
 Or it can be viewed as a VC layer, a boosted DOM extension.
 
 React does both arguable bad. It's imperative OOP-style is not suitable to emulate app.
 
-In CycleJS components are mini apps. In the spirit of Haskell etc.
+In CycleJS components are real mini apps. In the spirit of Haskell etc.
 
 **Intuitions:**
 
