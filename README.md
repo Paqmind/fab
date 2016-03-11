@@ -136,7 +136,7 @@ component :: Stream Request -> Stream Response
 Compare to CycleJS
 
 ```hs
-main :: Observable a -> Observable a
+main      :: Observable a -> Observable a
 component :: Observable a -> Observable a 
 
 -- or
