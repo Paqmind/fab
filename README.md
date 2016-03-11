@@ -139,7 +139,7 @@ Example of non-DOM side effects:
 7. [WebWorkers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 8. ...
 
-**ReactRouter** / **ReactDocumentTitle** were constantly struggling with a painful approximation React enforces you into.
+**React-Router** / **React-Document-Title** were constantly struggling with a painful approximation React enforces you into.
 
 [**React-Side-Effect**](https://github.com/gaearon/react-side-effect) is a quintessence of this.
 You represent Browser side effects as a VDOM hierarchy... Sounds like a complete nonsense. At least for me.
@@ -147,7 +147,7 @@ You represent Browser side effects as a VDOM hierarchy... Sounds like a complete
 
 Even if you insist React Components "have nothing to deal with DOM" (which can be proven as a lie) you still
 need to address *hierarchy* word. Some things have multiple "parents". Some things are not hierarchical at all (graphics).
-I have no clue, but I guess ReactCanvas is another mind-stretcher.
+I have no clue, but I guess React-Canvas is another mind-stretcher.
 
 That's what I mean by "broken ecosystem" in React .
 
