@@ -112,7 +112,6 @@ Data comes from HTTP. Data goes to HTTP. <br/>
 **Nothing** is rendered at all. So no components. Nor bloody widgets are in action.
 
 Today we have tons of APIs which are not DOM-specific or are even not DOM-related<br/>
-Audio APIs. Canvas. WebGL. Service Workers... – just for example.
 
 Imagine an invisible player. To play an unstoppable background noise.
 In React you *can* represent such a player as a Component.
@@ -128,7 +127,29 @@ The chosen imperative OOP-style is not enough to emulate an app.
 
 So React component-centric worldview is inherently broken (limited and falsifying).
 
-In CycleJS components are **real** mini apps.
+Apps are worthless without side-effects. But side-effects in browser are not limited to DOM.
+Example of non-DOM side effects: 
+
+1. HTTP requests
+2. Changing window.location / window.history
+3. Creating cookies
+4. Writing to local storage
+5. [Filesystem](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API)
+6. Playing audio
+7. [WebWorkers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+8. ...
+
+ReactRouter / ReactDocumentTitle was constantly struggling with a painful approximation React enforces you into.
+
+[React-Side-Effect](https://github.com/gaearon/react-side-effect) is a quintessence of this.
+You represent Browser side effects as a VDOM hierarchy... You need to *really* stretch your mind (in a bad sense) to just imagine this.
+Even if you imply React Components has nothing to deal with DOM (which can be proven as a lie) you still
+need to address *hierarchy* word. Some things has multiple "parents". Some things are not hierarchical at all (graphics).
+I have no clue, but I guess ReactCanvas is another mind-stretcher.
+
+That's what I mean by "broken ecosystem" in React .
+
+Now in CycleJS components are **real** mini apps.
 
 **Intuitions:**
 
