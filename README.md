@@ -9,7 +9,7 @@ Frontend Architecture Brainstorming
 One of the biggest unsolved questions.
 
 #### Proposed solutions
-
+a
 1. graphQL + Relay 
 2. Falcor
 
@@ -143,7 +143,7 @@ Example of non-DOM side effects:
 
 [**React-Side-Effect**](https://github.com/gaearon/react-side-effect) is a quintessence of this.
 You represent Browser side effects as a VDOM hierarchy... Sounds like a complete nonsense. At least for me.
-Some may view at as a cool "pushing-the-limits" thing I suppose.
+*Some may view it as a cool "pushing-the-limits" thing I suppose.*
 
 Even if you insist React Components "have nothing to deal with DOM" (which can be proven as a lie) you still
 need to address *hierarchy* word. Some things has multiple "parents". Some things are not hierarchical at all (graphics).
