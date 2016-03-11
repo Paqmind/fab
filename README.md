@@ -15,8 +15,8 @@ One of the biggest unsolved questions.
 
 #### Speculation 1 
 
-Declarative approach should be built after imperative one.<br/> 
-The problem: no viable imperative solution were found.
+Declarative implementation should be built upon imperative one.<br/> 
+The problem: no viable imperative implementation were found.
 
 #### Speculation 2 
 
