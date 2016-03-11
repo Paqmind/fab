@@ -1,0 +1,99 @@
+# fab
+
+Frontend Architecture Brainstorming
+
+## Data Load
+
+### Overview
+
+One of the biggest unsolved questions.
+
+#### Proposed solutions
+
+1. graphQL + Relay 
+2. Falcor
+
+#### Speculation 1 
+
+Declarative approach should be built after imperative one.<br/> 
+The problem: no viable imperative solution were found.
+
+#### Speculation 2 
+
+ORM history. We can compare HTTP data load with SQL data load.<br/> 
+With the first being harder (distributed system).
+
+SQL ORM answers: what to load, how to load<br/>
+HTTP "ORM" answers: what to load, how to load, from where to load
+
+If we agree ORM is kinda failed idea we really should be super dubious about GraphQL / Relay. 
+
+Something can work for simplest cases but fail (require ugly drawbacks / workarounds) for real ones.
+
+#### Example 
+
+Frontend DB has 4 "partial" models, 2 "missing" and 4 "ready-to-use". The system needs to request
+missing data... but how exactly? There are a few options. We can request 6 "not-ready" models in one request
+or we can request 2 "missing" with one request and 4 "partial" with another. Or we can request all 10 
+in one shot to "refresh" those 4 "ready-to-use" (as we have an opportunity). It depends on our criterias, our backend.
+We may be not in control of all the criterias.
+
+In HTTP-1.1 we always strive to minimize requests.<br/> 
+Which may be counter-productive with HTTP-2.0.
+
+**The question:** network channel or browser memory is a real bottleneck? Or both?
+
+### Load strategies
+
+Intuitions about laziness are applicable here:
+
+https://github.com/maxsnew/lazy
+
+> Maybe you have 100 different graphs you want to show at various times, each requiring a decent amount of computation. Here are a couple ways to handle this:
+
+> 1. Compute everything up front. This will introduce a delay on startup, but it should be quite fast after that. Depending on how much memory is needed to store each graph, you may be paying a lot there as well.
+
+> 2. Compute each graph whenever you need it. This minimizes startup cost and uses a minimal amount of memory, but when you are flipping between two graphs you may be running the same computations again and again.
+
+> 3. Compute each graph whenever you need it and save the result. Again, this makes startup as fast as possible fast, but since we save the result, flipping between graphs becomes much quicker. As we look at more graphs we will need to use more and more memory though.
+
+> All of these strategies are useful in general, but the details of your particular problem will mean that one of these ways provides the best experience. 
+
+Cool. Now to the data load.<br/> 
+We have at least four possible strategies. All Benefits and Drawbpacks below are **possible**.
+
+#### 1. Full preload. 
+
+All required data is loaded upfront.<br/> 
+Like in old-school jQuery architecture.
+Frontend-only: filtering, pagination, etc.
+
+Benefits: UI performance
+
+Drawbacks: memory, initial load delay
+
+Suitable for: small data, games
+
+#### 2. AJAXy
+
+Data is loaded for every render cycle.<br/> 
+Like in old-school backend-driven architecture.
+Backend-only: filtering, pagination, etc.
+
+Benefits: minimal memory usage (a waste of browser resources actually).
+
+Drawbacks: UI performance, network flood
+
+Suitable for: ???
+   
+#### 3. Load & Cache combine strategies (a family of them)
+
+Smart solutions. Arguably supersede 2. (but not 1.)
+
+#### 4. Above + garbage collection (can free memory). 
+
+Tough one. Arguably supersede 3.
+
+---
+
+Realistic app will probably require a mix of strategies for different datasets.
