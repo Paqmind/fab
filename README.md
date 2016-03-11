@@ -139,7 +139,7 @@ Example of non-DOM side effects:
 7. [WebWorkers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 8. ...
 
-**React-Router** / **React-Document-Title** were constantly struggling with a painful approximation React enforces you into.
+**React-Router** / **React-Document-Title** were constantly struggling with approximations React is built upon.
 
 [**React-Side-Effect**](https://github.com/gaearon/react-side-effect) is a quintessence of this.
 You represent Browser side effects as a VDOM hierarchy... Sounds like a complete nonsense. At least for me.
