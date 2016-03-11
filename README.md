@@ -140,5 +140,6 @@ main      :: Map String (Observable *) -> Map String (Observable *)
 component :: Map String (Observable *) -> Map String (Observable *)
 ```
 
-Haskell changed this API to monadic due to static typing complexities (note the `*` above)
+Unless I'm wrong: Haskell changed this API to monadic due to static typing complexities (note the `*` above).
 
+We don't have this problem in JS due to dynamic nature.
