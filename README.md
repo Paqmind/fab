@@ -20,7 +20,7 @@ The problem: no viable imperative implementation were found.
 
 #### Speculation 2 
 
-ORM history. We can compare HTTP data load with SQL data load.<br/> 
+ORM history. We can compare HTTP data load with ORM (SQL) data load.<br/> 
 With the first one being harder (distributed system).
 
 SQL ORM answers: what to load, how to load<br/>
