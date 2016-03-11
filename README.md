@@ -107,7 +107,7 @@ React team actually promotes two mutually exclusive ideas:
 
 Problem with DOM-centric approach: browser is not limited to DOM. 
 
-Imagine browser used to mine bitcoins.<br/>
+Imagine a browser used to mine bitcoins.<br/>
 Data comes from HTTP. Data goes to HTTP. <br/>
 **Nothing** is rendered at all. 
 
