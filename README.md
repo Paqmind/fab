@@ -122,7 +122,7 @@ But you *must* put it in the component tree.
 
 So it seems a Frontend App can be better viewed as a *real* app and a Browser as an OS.
 
-All available React architectures are not fractal (meaning components can't be reused as apps).<br/>
+No available React architecture is fractal (because component can't be reused as an app).<br/>
 I believe React components were called so mostly to strike Google's backed WebComponents.<br/>
 The chosen imperative OOP-style is not enough to emulate an app.
 
