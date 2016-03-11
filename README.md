@@ -86,11 +86,11 @@ Suitable for: ???
    
 #### 3. Load & Cache combine strategies (a family of them)
 
-Smart solutions. Arguably supersede 2. (but not 1.)
+Smart solution. Arguably supersedes 2. (but not 1.)
 
 #### 4. Above + garbage collection (can free memory). 
 
-Tough one. Arguably supersede 3.
+Tough one. Arguably supersedes 3.
 
 ---
 
