@@ -163,3 +163,20 @@ component :: Map String (Observable *) -> Map String (Observable *)
 Unless I'm wrong: Haskell changed this API to monadic due to static typing complexities (note the `*` above).
 `*` was "solved" through Union types hardcoded to the language (so not extendable).
 Due to dynamic typing, we don't have this type of problems in JS .
+
+### Questions
+
+1. Data load trigger.
+ 
+What system part initiates a corresponding event?
+
+Options: router (page-centric), component (component-centric), facet (data-centric)
+
+2. What to load?
+
+Model-level vs Field-level granularity.
+ 
+3. From where to load?
+
+REST vs non-REST backends.
+
