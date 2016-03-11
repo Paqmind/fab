@@ -146,5 +146,5 @@ component :: Map String (Observable *) -> Map String (Observable *)
 ```
 
 Unless I'm wrong: Haskell changed this API to monadic due to static typing complexities (note the `*` above).
-
-We don't have this problem in JS due to dynamic nature.
+`*` was "solved" through Union types hardcoded to the language (so not extendable).
+Due to dynamic typing, we don't have this type of problems in JS .
