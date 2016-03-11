@@ -120,10 +120,11 @@ But you *must* put it in the component tree.
 
 **Thus implying it's a VDOM-related. Which it is not.**
 
-So it seems a frontend app can be better viewed as a real app and browser as an OS.
+So it seems a Frontend App can be better viewed as a *real* app and a Browser as an OS.
 
-React Architecture is not fractal (component is not an app)
-Because the chosen imperative OOP-style is not enough to emulate an app.
+All available React architectures are not fractal (meaning components can't be reused as apps).<br/>
+I believe React components were called so mostly to strike Google's backed WebComponents.<br/>
+The chosen imperative OOP-style is not enough to emulate an app.
 
 In CycleJS components are **real** mini apps. Behold:
 
