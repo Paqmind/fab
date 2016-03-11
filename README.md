@@ -136,6 +136,11 @@ component :: Stream Request -> Stream Response
 Compare to CycleJS
 
 ```hs
+main :: Observable a -> Observable a
+component :: Observable a -> Observable a 
+
+-- or
+
 main      :: Map String (Observable *) -> Map String (Observable *) 
 component :: Map String (Observable *) -> Map String (Observable *)
 ```
